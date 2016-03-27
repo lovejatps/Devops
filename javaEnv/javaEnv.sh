@@ -25,3 +25,5 @@ export PATH=\$PATH:\$JAVA_HOME/bin
 # export CLASSPATH=$JAVA_HOME/lib
 # export PATH=$PATH:$JAVA_HOME/bin
 
+# update-alternatives --config java
+# update-alternatives --config javac

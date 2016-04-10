@@ -54,7 +54,7 @@
 
     docker-compose up -d  
 
-# Client Modify \'/etc/default/docker\'  
+# Client modify '/etc/default/docker'  
 
     DOCKER_OPTS="$DOCKER_OPTS --registry-mirror http://localmirror:5000"  
 

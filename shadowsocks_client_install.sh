@@ -23,12 +23,11 @@ sslocal -c /etc/shadowsocks.json -d start
 
 git clone https://github.com/rofl0r/proxychains-ng.git /usr/local/proxychains-ng
 pushd /usr/local/proxychains-ng
+sed -i "/^socks4/csocks5 127.0.0.1 1080" ./src/proxychains.conf
 ./configure –prefix=/usr –sysconfdir=/etc
 make
 make install
 make install-config
-sed -i "/^socks4/csocks5 127.0.0.1 1080" ./etc/proxychains.conf
 popd
 
 echo "Help: proxychains4 [ your command ]"
-
